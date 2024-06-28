@@ -1,0 +1,163 @@
+{
+    "d": {
+        "IsSuccess": true,
+        "ReturnValue": {
+            "__type": "WA.LNI.ECLIPS.DTO.BusinessDetailsDto",
+            "Contractor": {
+                "LicenseNumber": null,
+                "UbiNumber": null,
+                "LicenseType": null,
+                "LicenseTypeCode": null,
+                "BusinessName": null,
+                "PhoneNumber": null,
+                "Address1": null,
+                "Address2": null,
+                "City": null,
+                "State": null,
+                "CountyName": null,
+                "Zip": null,
+                "BusinessType": null,
+                "ParentCompany": null,
+                "EffectiveDate": null,
+                "ExpirationDate": null,
+                "SuspendDate": null,
+                "StatusDescription": null,
+                "SpecialtyCode1": null,
+                "SpecialtyCode2": null,
+                "SpecialtyName": null,
+                "SpecialtyName1": null,
+                "SpecialtyName2": null,
+                "SpecialtyText1": null,
+                "SpecialtyText2": null,
+                "ContractorType": null,
+                "ContractorTypeDescription": null,
+                "RelationType": null,
+                "AssociatedLicenses": [],
+                "AdminRelation": {
+                    "LicenseDescription": null,
+                    "LicenseNumber": null,
+                    "BusinessName": null,
+                    "StatusDescription": null,
+                    "RelationType": 0,
+                    "Ubi": null
+                },
+                "BusinesOwners": [],
+                "Bonds": [],
+                "Savings": [],
+                "Insurances": [],
+                "Summons": [],
+                "Warrants": [],
+                "Violations": [],
+                "Courses": [],
+                "Affidavits": [],
+                "Codes": [],
+                "Lapses": [],
+                "DebarDataList": [],
+                "StrikeDataList": [],
+                "IsLoaded": false,
+                "DtoDataHashValue": 0,
+                "IsDeleted": false
+            },
+            "Employer": {
+                "EmployerDetails": [
+                    {
+                        "AccountInfoBusinessNameList": [
+                            {
+                                "AccountId": 35283400,
+                                "BusinessLegalName": "HUTCHINSON ROBERT G",
+                                "BusinessDbaName": "PLAZA VETERINARY CLINIC",
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            }
+                        ],
+                        "AccountInfoStatusList": [
+                            {
+                                "AccountBalanceMessage": "Account is closed. Firm has no active industrial insurance account.",
+                                "EstimatedWorkersQuarterlyReportMessage": "N/A",
+                                "AccountRepresentative": "T5 / JOSHUA TONN (360) 902-4802 - Email: TONK235@lni.wa.gov",
+                                "IsAccountCurrent": false,
+                                "AccountBalanceCode": "CL",
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            }
+                        ],
+                        "AccountInfoRiskClassList": [],
+                        "AccountInfoExperiencFactorList": [
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2024",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            },
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2023",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            },
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2022",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            },
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2021",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            },
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2020",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            },
+                            {
+                                "ModulusFactorEffectiveBeginGdat": "01/01/2019",
+                                "ModulusFactorNumber": 1,
+                                "IsLoaded": false,
+                                "DtoDataHashValue": 0,
+                                "IsDeleted": false
+                            }
+                        ]
+                    }
+                ],
+                "EmployerBussinessDetails": {
+                    "LegalName": "HUTCHINSON ROBERT G",
+                    "BusinessId": "600151342",
+                    "CorpratedDate": null,
+                    "CityName": "WALLA WALLA",
+                    "ZipCode": "99362",
+                    "State": "WA",
+                    "Address": "1412 PLAZA WAY"
+                },
+                "EmployerGoverningPerson": [],
+                "AccountInactives": {
+                    "hasInactiveAccounts": true,
+                    "IsLoaded": false,
+                    "DtoDataHashValue": 0,
+                    "IsDeleted": false
+                }
+            },
+            "DoshInspectionList": [],
+            "UrlLinks": {
+                "__type": "WA.LNI.ECLIPS.DTO.UrlLinksDto",
+                "ContractorTrackingUrl": "https://secure.lni.wa.gov/contractortracking/ContractorTrackingSearch.aspx?SAW=False",
+                "ContractorTrackingRegistrationUrl": "https://secure.lni.wa.gov/contractortracking/ContractorRegistration.aspx?SAW=False",
+                "CrpsiAccountPremiumUrl": "",
+                "PwiaUrl": "",
+                "ProtectMyHomeUrl": "",
+                "AccountPremiumUrl": null
+            }
+        },
+        "Messages": []
+    }
+}
