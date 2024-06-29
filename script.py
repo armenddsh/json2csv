@@ -48,7 +48,7 @@ def json2csv(obj):
 with open('example.json') as f:
     data = json.load(f)
     
-    with open('out2.json', 'wt', encoding='utf8', newline='') as w:
+    with open('out2.csv', 'wt', encoding='utf8', newline='') as w:
         
         results = json2csv(data)
         field_names = results.get('headers')
