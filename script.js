@@ -1,7 +1,7 @@
 const data = require("./example.json")
 // const fs = require("fs")
 
-function flatten(rowIndex, obj, parentKey, out, headers) {
+function flatten(obj, parentKey, out, headers) {
     const keys = Object.keys(obj);
 
     for (const key of keys) {
@@ -9,14 +9,13 @@ function flatten(rowIndex, obj, parentKey, out, headers) {
         const k = parentKey ? parentKey + "." + key : key;
         if (Array.isArray(value)) {
             for (const v of value) {
-                flatten(rowIndex, v, k, out, headers)
+                flatten(v, k, out, headers)
             }
         } else if (value instanceof Object) {
-            flatten(rowIndex, value, k, out, headers)
+            flatten(value, k, out, headers)
         } else {
             headers.add(k);
             out.push({
-                rowIndex,
                 name: k,
                 value: value
             })
@@ -28,7 +27,7 @@ function json2csv(obj) {
     const out = [];
     const headers = new Set();
 
-    flatten(0, obj, "", out, headers)
+    flatten(obj, "", out, headers)
 
     const p = {}
     const results = []

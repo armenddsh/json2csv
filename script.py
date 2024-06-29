@@ -1,18 +1,17 @@
 import json
 import csv
 
-def flatten(row_index, obj, parent_key, out, headers):
+def flatten(obj, parent_key, out, headers):
     for key, value in obj.items():
         k = f"{parent_key}.{key}" if parent_key else key
         if isinstance(value, list):
             for v in value:
-                flatten(row_index, v, k, out, headers)
+                flatten(v, k, out, headers)
         elif isinstance(value, dict):
-            flatten(row_index, value, k, out, headers)
+            flatten(value, k, out, headers)
         else:
             headers.add(k)
             out.append({
-                "rowIndex": row_index,
                 "name": k,
                 "value": value
             })
@@ -21,7 +20,7 @@ def json2csv(obj):
     out = []
     headers = set()
 
-    flatten(0, obj, "", out, headers)
+    flatten(obj, "", out, headers)
 
     p = {}
     results = []
